@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Academic School Life Blog</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+.body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #4d008c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  font-size:16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>AcademicLife: 2024 - 2025</h1>
+  <p>A <b>responsive</b> blog website created to document my progress in my internship for the first time as well as the development of this blog website.</p>
+</div>
+<div class="navbar">
+  <a href="#" active>Home(Posts)</a>
+  <a href="index.html">Contact Me</a>
+  <a href="index3.html">Issues</a>
+  <a href="index4.html">Social Media</a>
+  <div class="dropdown">
+    <button class="dropbtn">Table of Contents
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="index.html">Contact Me</a>
+      <a href="index3.html">Issues</a>
+      <a href="index4.html">Social Media</a>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <h5>Photo of me:</h5>
+    <img src="S:\Computer Science\AcademicLife2024-2025\Pictures\AboutMePicture.png" height="200px">
+    <p>For those that do not know me, Hi! My name is Atiana!</p>
+    <p>I am a junior at UMHB for the 2024 to 2025 school year 
+        and I am happy to be a part of the Student Marketing team for this year.</p>
+    <h3>Popular Posts</h3>
+    <p>Posts that are trending...(Updated on the regular)</p>
+    <img src="S:\Computer Science\AcademicLife2024-2025\Pictures\FirstDayOfInternship.png" style="height:100px;"><br>
+    <img src="S:\Computer Science\AcademicLife2024-2025\Pictures\Breakfast.png" style="height:180px;"><br>
+    <img src="S:\Computer Science\AcademicLife2024-2025\Pictures\FirstWeekFinished.png" style="height:100px;">
+  </div>
+  <div class="main">
+    <h2>School so Far 2024</h2>
+    <h5>First Day of School, Aug 12, 2024</h5>
+    <img src="S:\Computer Science\AcademicLife2024-2025\Pictures\FirstDay.png" height="200px">
+    <p>This is a picture of all of the things that are in the vehicle today.</p>
+    <p>This is going to be the start of a long semester. I hope that 2024 - 2025 will be a good year!</p>
+    <br>
+    <h2>Getting into the Feel of a Job</h2>
+    <h5>First Day of Internship, Aug 13, 2024</h5>
+    <img src="S:\Computer Science\AcademicLife2024-2025\Pictures\FirstDayOfInternship.png" height="200px">
+    <p>It's the first day of the internship today!</p>
+    <p>I'm still trying to figure out how to navagate all of the stuff on this computer, but hopefully, I'll get the hang of it.</p>
+    <br>
+    <h2>Food</h2>
+    <h5>Breakfast, Aug 15, 2024</h5>
+    <img src="S:\Computer Science\AcademicLife2024-2025\Pictures\Breakfast.png" height="200px">
+    <p>Just a simple bagel that I made in my dorm just now. 
+        It contains egg and maple sausage. I also have a simply organe juice next to it 
+        but I forgot a picture XD. So this precious bagel will do. Plus I've also bee trying to get my book 
+        in order at school so everything should be in place by the end of the week.</p>
+    <br>
+    <h2>First Week Finished</h2>
+    <h5>Completion of the First Week, Aug 16, 2024</h5>
+    <img src="S:\Computer Science\AcademicLife2024-2025\Pictures\FirstWeekFinished.png" height="200px">
+    <p>Just finished my first long week here on internship! 
+        The first week was very interesting in learning how the mechanics work, 
+        but other than that it was a great learning expirence. I've also made sure 
+        to check my timeslot on my computer to keep track of my times here while I study and work.</p>
+    <br>
+    <h2>Second Week of Internship</h2>
+    <h5>Start of Week 2, Aug 19, 2024</h5>
+    <img src="S:\Computer Science\AcademicLife2024-2025\Pictures\SecondWeekStarted.png" height="200px">
+    <p>It's time to get started on Week 2 of school and the intership. 
+        I think I'm starting to get the hang of how things work here at the Clements Building and how to time things properly. 
+        I'm currently working on this website that looks like it is getting better and I'm still trying to figure out how I want to design this blog.</p>
+    <br>
+    <h2>Update Report 1</h2>
+    <h5>2nd Day into the 2nd Week!, Aug 20, 2024</h5>
+    <img src="S:\Computer Science\AcademicLife2024-2025\Pictures\UpdateOnWebsite.PNG" height="200px" height="200px">
+    <p>Just today I was fixing up the tabs that lead into the next page. Hopfull I can get that fixed soon. Also, I am planning on 
+      updating the logo to a picture so that it looks more like I want it to, and the inclusion of adding more countries to list will be comming tommorow.</p>
+
+    <h2>Update Report 2</h2>
+    <h5>Day 3 of Week 2, Aug 21, 2024</h5>
+    <img src="S:\Computer Science\AcademicLife2024-2025\Pictures\"height="200px">
+    <p>This is a continuation from the previous post. I have created 56 more country option choices in the dropdown in the contact me page besides USA, Australia, and Canada. I have also created 
+      another tab that will so my social media profiles soon. But for today, I am focusing on working on adding onto the contact me page and the submit button to that your answers will be automatically sent to me via email.</p>
+  </div>
+</div>
+<div class="footer">
+  <h2>Credits</h2>
+  <p>Written and Created by Atiana Ramos</p>
+</div>
+</body>
+</html>
