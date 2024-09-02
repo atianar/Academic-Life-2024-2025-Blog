@@ -244,14 +244,14 @@ input[type=submit]:hover {
       </div>
       <div class="column">
         <form action="https://formsubmit.co/anramos@cru.umhb.edu" method="POST">
-          <input type="hidden" name="_subject" value="New email Yay!">
+          <input type="hidden" name="email" value="New email Yay!">
+          <input type="hidden" name="_next" value="https://atiana-r.com/thankyoupage2.html">
           <label for="fname">First Name</label>
           <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
           <label for="lname">Last Name</label>
           <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
           <label for="email">Email</label> <br>
           <input type="text" id="email" name="email" placeholder="Your email.." required>
-          <input type="hidden" id="email" name="_next" value="file:///S:/Computer%20Science/AcademicLife2024-2025/index.html"> <br>
           <label for="country">Country</label>
           <select id="country" name="country" placeholder="Your country.."required>
             <option value="Argentina">Argentina</option>
@@ -316,11 +316,10 @@ input[type=submit]:hover {
           </select>
           <label for="subject">Subject</label>
           <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-          <button type="text">Submit</button>
+          <button type="Submit" class="btn btn-lg btn-dark btn-block">Submit</button>
         </form>
       </div>
     </div>
-  </div>
   <div class="footer">
     <h2>Credits</h2>
     <p>Written and Created by Atiana Ramos</p>
