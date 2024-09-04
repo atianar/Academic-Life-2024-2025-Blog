@@ -127,16 +127,35 @@
     </div>
   </div>
 <div class="container">
+  <div style="text-align:center">
+    <h2>Report Issues/Updates </h2>
+    <p>Tell me what issues are bothering you or give me a suggestion on a update I can do.</p>
+  </div>
   <div class="row">
-    <div class="column">
-      <div class="container">
+    <div class="row">
+      <div class="column">
+        <img src="S:\Computer Science\AcademicLife2024-2025\Pictures\AboutMePicture.png" style="width:100%">
+      </div>
+      <div class="column">
         <div style="text-align:center">
-          <h2>Report Issues/Updates </h2>
-          <p>Tell me what issues are bothering you or give me a suggestion on a update I can do.</p>
-        </div>
+          <form action="https://formsubmit.co/anramos@cru.umhb.edu" method="POST">
+            <input type="hidden" name="email" value="Issue Notification!">
+            <input type="hidden" name="_next" value="https://atiana-r.com/thankyoupage2.html">
+            <label for="fname">First Name</label><br>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." required><br>
+            <label for="lname">Last Name</label><br>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required><br>
+            <label for="email">Email</label> <br>
+            <input type="text" id="email" name="email" placeholder="Your email.." required> <br>
+            <label for="Issue">Issue</label><br>
+            <textarea id="Issue" name="Issue" placeholder="Write the issue.." style="height:170px"></textarea><br>
+            <button type="Submit" class="btn btn-lg btn-dark btn-block">Submit</button><br>
+          </form>
+         </div>
+       </div>
+      </div>
     </div>
   </div>
-</div>
 <div class="footer">
   <h2>Credits</h2>
   <p>Written and Created by Atiana Ramos</p>
