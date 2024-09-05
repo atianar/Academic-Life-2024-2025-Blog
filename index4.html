@@ -98,6 +98,83 @@
   color: white;
 }
 
+.row .icon{
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 22px;
+  display: inline-block;
+  align-items: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: #333;
+  text-decoration: none;
+}
+.row .tooltip {
+  position: absolute;
+  top: 0;
+  line-height: 1.5;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.row .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.row .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.row .icon:hover span,
+.row .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+.row .facebook:hover,
+.row .facebook:hover .tooltip,
+.row .facebook:hover .tooltip::before {
+  background-color: #3b5999;
+  color: #ffffff;
+}
+.row .snapchat:hover,
+.row .snapchat:hover .tooltip,
+.row .snapchat:hover .tooltip::before {
+  background-color: #faf617cb;
+  color: #ffffff;
+}
+.row .instagram:hover,
+.row .instagram:hover .tooltip,
+.row .instagram:hover .tooltip::before {
+  background-color: #e1306c;
+  color: #ffffff;
+}
+.row .github:hover,
+.row .github:hover .tooltip,
+.row .github:hover .tooltip::before {
+  background-color: #333333;
+  color: #ffffff;
+}
+
 /* Footer */
 .footer {
   padding: 20px;
@@ -128,11 +205,32 @@
       </div>
     </div>
   </div>
+<div class="container">
+  <div style="text-align:center">
+    <h2>Social Media Links </h2>
+    <p>Follow me on these platforms for more information and upadates on this website and just to get to know me a little better.</p>
+</div>
 <div class="row">
-  <a href="LINK URL" target="_blank" title="TITLE OF LINK">Instagram</a>
-  <a href="https://snapchat.com/t/tZHkiLRm" target="_blank" title="TITLE OF LINK">Snapchat</a>
-  <a href="https://www.facebook.com/atiana.ramos.10?mibextid=LQQJ4d" target="_blank" title="TITLE OF LINK">Facebook</a>
-  <a href="https://www.instagram.com/atiana1212?igsh=MTdpbHBoMzNhMG16eA%3D%3D&utm_source=qr" target="_blank" title="Instagram">Instagram</a>
+  <div style="text-align:center">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+      <a href="https://www.facebook.com/atiana.ramos.10?mibextid=LQQJ4d" class="icon facebook">
+        <div class="tooltip">Facebook</div>
+        <span><i class="fab fa-facebook"></i></span>
+      </a>
+      <a href="https://snapchat.com/t/C7YwYagQ" class="icon snapchat">
+        <div class="tooltip">Snapchat</div>
+        <span><i class="fab fa-snapchat"></i></span>
+      </a>
+      <a href="https://www.instagram.com/atiana1212?igsh=MTdpbHBoMzNhMG16eA%3D%3D&utm_source=qr" class="icon instagram">
+        <div class="tooltip">Instagram</div>
+        <span><i class="fab fa-instagram"></i></span>
+     </a>
+      <a href="https://github.com/atianar" class="icon github">
+        <div class="tooltip">Github</div>
+        <span><i class="fab fa-github"></i></span>
+      </a>
+    </div>
+  </div>
 </div>
 <div class="footer">
   <h2>Credits</h2>
