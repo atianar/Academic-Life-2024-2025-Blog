@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Academic School Life Blog</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -68,6 +69,7 @@
 /* Change color on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: red;
+  color:black;
 }
 
 .dropdown-content {
@@ -102,6 +104,50 @@
   color: white;
 }
 
+.navbar .login-container {
+  float: right;
+}
+
+.navbar input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  width:120px;
+}
+
+.navbar .login-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background-color: #555;
+  color: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar .login-container button:hover {
+  background-color: green;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar .login-container {
+    float: none;
+  }
+  .navbar a, .topnav input[type=text], .topnav .login-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .navbar input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
 
 /* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
@@ -217,6 +263,13 @@
       <a href="index3.html">Report Issues</a>
       <a href="index4.html">Social Media</a>
     </div>
+    <div class="login-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Username" name="username">
+        <input type="text" placeholder="Password" name="psw">
+        <button type="submit">Login</button>
+      </form>
+    </div>
   </div>
 </div>
 <div class="row">
@@ -306,6 +359,12 @@
     <p>Today has rather been very easy to work with as I have decided to add in more country options in the contact me page and double checking to make sure that the contact form on the 
       website works that way that I want it to. Now, I am thinking about working on the social media page of this website and figure out an idea on how I want to design this page. Any templates
        or suggestion will do as long as it has a link. </p>
+    <br>
+    <h2>Login Page to Get into Website</h2>
+    <h5>Week 4 Day 5 of Internship, September 6, 2024</h5>
+    <img src="#" height="200px">
+    <p>I suddenly had the idea from the internet to contruct a login page for you all to fill in to enter to view the website. This was a very interesting idea and the login page as 
+      well as the issue page and social media tab are still in development. </p>
     <br>
     <h2>Login Page to Get into Website Progress</h2>
     <h5>Week 5 Day 2 of Internship, September 10, 2024</h5>
