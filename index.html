@@ -49,7 +49,7 @@
         }
 
         /* Avatar image */
-        img.avatar {
+        .img.avatar {
             width: 40%;
             border-radius: 50%;
         }
@@ -64,10 +64,20 @@
             float: right;
             padding-top: 16px;
         }
+        span.register {
+            float: right;
+            padding-top: 16px;
+            padding-right: 15px;
+            padding-up: 100px;
+        }
 
         /* Change styles for span and cancel button on extra small screens */
         @media screen and (max-width: 300px) {
             span.psw {
+                display: block;
+                float: none;
+            }
+            span.register {
                 display: block;
                 float: none;
             }
@@ -78,9 +88,9 @@
     </style>
 </head>
 <body>
-    <form action="index2.html" method="POST">
+    <form action="index4.html" method="POST">
         <div class="imgcontainer">
-          <img src="S:/Computer Science/AcademicLife2024-2025/Pictures/avatar.png" width="256" height="256" alt="Avatar" class="avatar" title="Avatar free icon">
+          <img src="/Pictures/avatar.png" width="256" height="256" alt="Avatar" class="avatar" title="Avatar free icon">
         </div>
         <div class="container">
           <label for="uname"><b>Username</b></label>
@@ -97,7 +107,8 @@
       
         <div class="container" style="background-color:#f1f1f1">
           <button type="button" class="cancelbtn">Cancel</button>
-          <span class="psw">Forgot <a href="PasswordValidation.html">password?</a></span>
+          <span class="psw">Forgot <a href="index3.html">password?</a></span>
+          <span class="register">Don't have a <a href="index2.html">Account?</a></span>
         </div>
       </form>   
 </body>
