@@ -4,6 +4,9 @@
 <title>Social Media</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style>
 * {
   box-sizing: border-box;
@@ -24,6 +27,12 @@
   background: #4d008c;
   color: white;
 }
+
+.btnbtn-infobtn-lg {
+  float: right;
+  padding: 16px;
+}
+
 
 .navbar {
   overflow: hidden;
@@ -64,6 +73,7 @@
 /* Change color on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: red;
+  color:black;
 }
 
 .dropdown-content {
@@ -159,7 +169,7 @@
 .row .snapchat:hover,
 .row .snapchat:hover .tooltip,
 .row .snapchat:hover .tooltip::before {
-  background-color: #faf617cb;
+  background-color: #e6e21d;
   color: #ffffff;
 }
 .row .instagram:hover,
@@ -186,22 +196,25 @@
 </head>
 <body>
 <div class="header">
+  <a href="index.html">
+    <span class="glyphicon glyphicon-log-out"></span>
+  </a>
     <h1>AcademicLife: 2024 - 2025</h1>
     <p>A <b>responsive</b> blog website created to document my progress in my internship for the first time.</p>
 </div>
 <div class="navbar">
-    <a href="index2.html">Home(Posts)</a>
-    <a href="index.html">Contact Me</a>
-    <a href="index3.html">Report Issues</a>
+    <a href="index4.html">Home(Posts)</a>
+    <a href="index5.html">Contact Me</a>
+    <a href="index6.html">Report Issues</a>
     <a href="#" active >Social Media</a>
     <div class="dropdown">
       <button class="dropbtn">Table of Contents
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-          <a href="index.html">Contact Me</a>
-        <a href="index2.html">Home(Posts)</a>
-        <a href="index3.html">Report Issues</a>
+        <a href="index4.html">Home(Posts)</a>
+        <a href="index5.html">Contact Me</a>
+        <a href="index6.html">Report Issues</a>
       </div>
     </div>
   </div>
