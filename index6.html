@@ -4,6 +4,9 @@
 <title>Issues</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <style>
   * {
@@ -23,6 +26,12 @@
   background: #4d008c;
   color: white;
 }
+
+.btnbtn-infobtn-lg {
+  float: right;
+  padding: 16px;
+}
+
 
 .navbar {
   overflow: hidden;
@@ -63,6 +72,7 @@
 /* Change color on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: red;
+  color:black;
 }
 
 .dropdown-content {
@@ -107,22 +117,25 @@
 </style>
 <body>
 <div class="header">
+  <a href="index.html">
+    <span class="glyphicon glyphicon-log-out"></span>
+  </a>
     <h1>AcademicLife: 2024 - 2025</h1>
     <p>A <b>responsive</b> blog website created to document my progress in my internship for the first time.</p>
 </div>
 <div class="navbar">
-    <a href="index2.html">Home(Posts)</a>
-    <a href="index.html">Contact Me</a>
+    <a href="index4.html">Home(Posts)</a>
+    <a href="index5.html">Contact Me</a>
     <a href="#" active>Report Issues</a>
-    <a href="index4.html">Social Media</a>
+    <a href="index7.html">Social Media</a>
     <div class="dropdown">
       <button class="dropbtn">Table of Contents
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="index.html">Contact Me</a>
-        <a href="index2.html">Home(Posts)</a>
-        <a href="index4.html">Social Media</a>
+        <a href="index4.html">Home(Posts)</a>
+        <a href="index5.html">Contact Me</a>
+        <a href="index7.html">Social Media</a>
       </div>
     </div>
   </div>
@@ -130,32 +143,29 @@
   <div style="text-align:center">
     <h2>Report Issues/Updates </h2>
     <p>Tell me what issues are bothering you or give me a suggestion on a update I can do.</p>
-  </div>
+</div>
   <div class="row">
     <div class="row">
-      <div class="column">
-        <img src="S:\Computer Science\AcademicLife2024-2025\Pictures\AboutMePicture.png" style="width:100%">
-      </div>
       <div class="column">
         <div style="text-align:center">
           <form action="https://formsubmit.co/anramos@cru.umhb.edu" method="POST">
             <input type="hidden" name="email" value="Issue Notification!">
             <input type="hidden" name="_next" value="https://atiana-r.com/thankyoupage3.html">
             <label for="fname">First Name</label><br>
-            <input type="text" id="fname" name="firstname" placeholder="Your name.." required><br>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." required><br><br>
             <label for="lname">Last Name</label><br>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required><br>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required><br><br>
             <label for="email">Email</label> <br>
-            <input type="text" id="email" name="email" placeholder="Your email.." required> <br>
+            <input type="text" id="email" name="email" placeholder="Your email.." required><br><br>
             <label for="Issue">Issue</label><br>
-            <textarea id="Issue" name="Issue" placeholder="Write the issue.." style="height:170px"></textarea><br>
+            <textarea id="Issue" name="Issue" placeholder="Write the issue.." style="height:170px"></textarea><br><br>
             <button type="Submit" class="btn btn-lg btn-dark btn-block">Submit</button><br>
           </form>
          </div>
        </div>
       </div>
     </div>
-  </div>
+</div>
 <div class="footer">
   <h2>Credits</h2>
   <p>Written and Created by Atiana Ramos</p>
